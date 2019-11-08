@@ -1,0 +1,13 @@
+<header>
+  <nav class="nav-wraper grey darken-1">
+    <div class="container">
+      <a routerLink="/" class="center">
+        <i class="material-icons black-text">home</i>
+      </a>
+      <!-- <a class="right">
+        <i class="material-icons circle grey darken-1 black-text">search</i>
+      </a> -->
+    </div>
+  </nav>
+  <app-hero *ngIf="!rotaAtual.includes('/repos')"></app-hero>
+</header>

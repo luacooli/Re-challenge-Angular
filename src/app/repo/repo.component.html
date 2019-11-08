@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Repositories</h2>
+  <div class="row" *ngFor="let repo of repository">
+    <div class="col s12 l6">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">{{ repo.name }}</span>
+          <p><b>Description: </b>{{ repo.description }}</p>
+          <p><b>Created at: </b>{{ repo.created_at }}</p>
+          <p><b>Pushed at: </b>{{ repo.pushed_at }}</p>
+          <a class="right btn-small grey darken-2 black-text waves-effect waves-light" routerLink="/commits">
+            <span>Commits</span>
+            <i class="material-icons right-align">call_made</i>
+          </a>
+        </div>
+        <div class="card-action">
+          <a routerLink="/commits">Go to Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

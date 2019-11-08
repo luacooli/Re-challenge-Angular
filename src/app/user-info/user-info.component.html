@@ -1,0 +1,35 @@
+<!-- <div class="user-info">
+  <div class="profile-photo">
+    <div class="photo"><img [src]="user.avatar_url" alt="profile pic"/></div>
+  </div>
+
+  <div class="user-detail">
+    <p><b>Login: </b> {{user.login}} </p>
+    <p><b>Followers: </b> {{user.followers}} </p>
+    <p><b>Following: </b> {{user.following}} </p>
+    <div class="navigation">
+      <span><b>Repos: </b> {{user.public_repos}} </span>
+      <a class="btn-small grey darken-2 black-text waves-effect waves-light" routerLink="/repos">
+        <span> Click here to see my repos</span>
+        <i class="material-icons right">call_made</i>
+      </a>
+    </div>
+    <p><b>Type of account: </b> {{user.type}} </p>
+  </div>  
+</div> -->
+
+<div class="container">
+  <ul class="collection">
+    <li class="collection-item"><b>Login: </b> {{ user.login }}</li>
+    <li class="collection-item"><b>Followers: </b> {{ user.followers }}</li>
+    <li class="collection-item"><b>Following: </b> {{ user.following }}</li>
+    <li class="collection-item">
+      <span><b>Repos: </b> {{ user.public_repos }} </span>
+      <a class="right btn-small grey darken-2 black-text waves-effect waves-light" routerLink="/repos">
+        <span> Click here to see my repos</span>
+        <i class="material-icons right">call_made</i>
+      </a>
+    </li>
+    <li class="collection-item"><b>Type of account: </b> {{ user.type }}</li>
+  </ul>
+</div>
