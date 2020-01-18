@@ -19,11 +19,12 @@
 </div> -->
 
 <div class="container">
+  <img src="../../assets/imgs/home.png" alt="imagem">
   <ul class="collection">
     <li class="collection-item"><b>Login: </b> {{ user.login }}</li>
     <li class="collection-item"><b>Followers: </b> {{ user.followers }}</li>
     <li class="collection-item"><b>Following: </b> {{ user.following }}</li>
-    <li class="collection-item">
+    <li class="collection-item li-repos">
       <span><b>Repos: </b> {{ user.public_repos }} </span>
       <a class="right btn-small grey darken-2 black-text waves-effect waves-light" routerLink="/repos">
         <span> Click here to see my repos</span>

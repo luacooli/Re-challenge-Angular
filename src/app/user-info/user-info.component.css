@@ -1,0 +1,13 @@
+div.container {
+  margin-top: 60px;
+}
+
+img {
+  border-radius: 50%;
+  align-items: center;
+}
+
+.li-repos {
+  display: flex;
+  justify-content: space-between;
+}
